@@ -13,3 +13,14 @@
 * @vitejs/plugin-react": "4.2.1"
 * dotenv": "16.4.5"
 * vite": "5.2.11
+
+Pasos para crear proyecto con esta plantilla
+
+1 - git clone https://github.com/ludvik-vs/vite-template.git
+
+2 - cd vite-template
+
+3 - npm init vite@./
+
+completa los pasos para crear un proyecto Vite utilizando tu plantilla personalizada.
+

@@ -26,3 +26,26 @@ $breakpoint-xl: 1200px;
         @content;
     }
 }
+
+/* EJEMPLO DE USO */
+/*
+.element {
+    width: 100%;
+
+    @include sm-secreen {
+        display: none;
+    }
+
+    @include md-screen {
+        width: 33.33%;
+    }
+    
+    @include lg-screen {
+        width: 50%;
+    }
+
+    @include xl-screen {
+        width: 100%;
+    }
+}
+*/

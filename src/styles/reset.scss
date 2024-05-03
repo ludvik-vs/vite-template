@@ -101,6 +101,7 @@ html {
 *,
 *:before,
 *:after {
+    position: relative;
     box-sizing: inherit;
 }
 

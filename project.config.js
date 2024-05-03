@@ -1,7 +1,7 @@
 "use strict";
 
 const config = {
-    title: "My template",
+    title: "Custom Project",
     favicon: "/icon.svg",
 }
 
