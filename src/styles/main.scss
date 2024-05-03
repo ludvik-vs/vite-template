@@ -1,1 +1,18 @@
 @import './reset.scss';
+@import './mediaQueries.scss';
+
+.element {
+    width: 100%;
+
+    @include md-screen {
+        width: 33.33%;
+    }
+    
+    @include lg-screen {
+        width: 50%;
+    }
+
+    @include xl-screen {
+        width: 100%;
+    }
+}

@@ -1,9 +1,9 @@
 function Home(){
-    return(
-        <>
-            Home Page
-        </>
-    )
+    return (
+      <>
+        
+      </>
+    );
 }
 
-export {Home}
+export {Home}   
