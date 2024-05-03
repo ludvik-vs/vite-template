@@ -1,0 +1,114 @@
+@import "../../styles/variables.scss";
+
+.pallete--color-galley {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.pallete--color-box {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: $color-white;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+// -------------------------------------------------- //
+
+.pallete--primary-color {
+    background-color: $md3-primary;
+}
+
+.pallete--secondary-color {
+    background-color: $md3-secondary;
+}
+
+.pallete--error-color {
+    background-color: $md3-error;
+}
+
+.pallete--warning-color {
+    background-color: $md3-warning;
+}
+
+.pallete--success-color {
+    background-color: $md3-success;
+}
+
+.pallete--info-color {
+    background-color: $md3-info;
+}
+
+.pallete--background-color {
+    background-color: $md3-background;
+    color: $color-black;
+}
+
+// -------------------------------------------------- //
+
+.pallete--white-color {
+    background-color: $color-white;
+    color: $color-black;
+}
+
+.pallete--black-color {
+    background-color: $color-black;
+}
+
+.pallete--gray-color {
+    background-color: $color-gray;
+}
+
+.pallete--dark-gray-color {
+    background-color: $color-dark-gray;
+}
+
+.pallete--red-color {
+    background-color: $color-red;
+}
+
+.pallete--green-color {
+    background-color: $color-green;
+}
+
+.pallete--blue-color {
+    background-color: $color-blue;
+}
+
+.pallete--yellow-color {
+    background-color: $color-yellow;
+}
+
+.pallete--purple-color {
+    background-color: $color-purple;
+}
+
+.pallete--orange-color {
+    background-color: $color-orange;
+}
+
+.pallete--pink-color {
+    background-color: $color-pink;
+}
+
+.pallete--gray-light-color {
+    background-color: $color-gray-light;
+}
+
+.pallete--gray-medium-light-color {
+    background-color: $color-gray-medium-light;
+}
+
+.pallete--gray-medium-dark-color {
+    background-color: $color-gray-medium-dark;
+}
+
+.pallete--gray-very-dark-color {
+    background-color: $color-gray-very-dark;
+}
