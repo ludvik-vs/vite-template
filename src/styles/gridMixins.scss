@@ -1,0 +1,74 @@
+// Mixin para definir la cuadrícula con columnas específicas y tamaños mínimo y máximo
+@mixin grid-columns($columns, $min-size, $max-size) {
+    grid-template-columns: repeat($columns, minmax($min-size, $max-size));
+}
+
+/* EXAMPLE USE */
+
+/*
+.container {
+    @include grid-columns(3, 100px, 1fr);
+    gap: 10px;
+}
+*/
+
+// Mixin para definir la cuadrícula con columnas automáticas que llenan el espacio disponible
+// Las columnas adicionales que no se llenaron con elementos simplemente estarán vacías.
+@mixin grid-auto-fill-columns($min1, $min2, $max) {
+    grid-auto-flow: dense;
+    grid-template-columns: repeat(auto-fill, minmax(min($min1, $min2), $max));
+}
+
+/*
+.container {
+    @include grid-auto-fill-columns(100%, 15rem, 1fr);
+    gap: 10px;
+}
+*/
+
+// Mixin para definir la cuadrícula con columnas automáticas que ajustan su tamaño al espacio disponible
+// Ajustará automáticamente el tamaño de las columnas para que se ajusten al espacio disponible.
+@mixin grid-auto-fit-columns($min1, $min2, $max) {
+    grid-auto-flow: dense;
+    grid-template-columns: repeat(auto-fit, minmax(min($min1, $min2), $max));
+}
+
+/*
+.container {
+    @include grid-auto-fit-columns(100%, 215px, 1fr);
+    gap: 15px;
+}
+*/
+
+// Mixin para definir la cuadrícula con filas específicas y tamaños mínimo y máximo
+@mixin grid-rows($rows, $min--row-size, $max--row-size) {
+    grid-template-rows: repeat($rows, minmax($min--row-size, $max--row-size));
+}
+
+/*
+.container {
+    @include grid-rows(4, 150px, 1fr);
+    gap: 20px;
+}
+*/
+
+// Mixin para definir la cuadrícula con filas automáticas que llenan el espacio disponible
+// Las filas adicionales que no se llenaron con elementos simplemente estarán vacías.
+@mixin grid-auto-fill-rows($min1, $min2, $max) {
+    grid-auto-flow: dense; // Dense se asegura de que los elementos se coloquen densamente en la cuadrícula
+    grid-template-rows: repeat(auto-fill, minmax(min($min1, $min2), $max)); // Auto-fill para rellenar el espacio disponible con filas automáticas
+}
+
+/*
+.container {
+    @include grid-auto-fill-rows(100%, 15rem, 1fr);
+    gap: 10px;
+}
+*/
+
+// Mixin para definir la cuadrícula con filas automáticas que ajustan su tamaño al espacio disponible
+// Ajustará automáticamente el tamaño de las filas para que se ajusten al espacio disponible.
+@mixin grid-auto-fit-rows($min1, $min2, $max) {
+    grid-auto-flow: dense; // Dense se asegura de que los elementos se coloquen densamente en la cuadrícula
+    grid-template-rows: repeat(auto-fit, minmax(min($min1, $min2), $max)); // Auto-fit para ajustar el tamaño de las filas al espacio disponible
+}

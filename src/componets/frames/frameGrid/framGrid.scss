@@ -1,0 +1,13 @@
+@import "../../../styles/gridMixins.scss";
+@import "../../../styles/mixins.scss";
+
+.gridExample{
+    display: grid;
+    gap: 10px;
+
+    div {
+        @include flex-center;
+        font-size: 3rem;
+        border: 1px solid plum;
+    }
+}
